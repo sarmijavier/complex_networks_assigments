@@ -3,6 +3,8 @@ from infomap import Infomap
 from sklearn.metrics.cluster import pair_confusion_matrix
 from sklearn.metrics import mutual_info_score
 import numpy as np
+from collections import defaultdict
+
 
 def entropy(labels):
     probs = np.bincount(labels) / len(labels)
